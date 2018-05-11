@@ -32,7 +32,7 @@ do
 echo $line
 echo ${line//[[:blank:]]/}
 line2=$(echo ${line//[[:blank:]]/})
-grep -P "\t$line\t" GTEx_Data_V6_Annotations_SampleAttributesDS.txt | cut -f1 > $line2.sample_IDs
+grep -P "\t$line\t" GTEx_Data_V6_Annotations_SampleAttributesDS.txt | cut -f1 > "$line".sample_IDs
 done < "$TISSUES"
 
 ls -1 *.sample_IDs > sample_IDs_all
@@ -88,8 +88,8 @@ do
 	
         		do
         		./extractor.sh $samples_ID $line | awk 'NR%2==0'
-       			done < "$tissues" >> $line.$tissues.output
-			echo $tissues | cat - $line.$tissues.output > temp && mv temp $line.$tissues.output
+       			done < "$tissues" >> $line."$tissues".output
+			echo "$tissues" | cat - $line."$tissues".output > temp && mv temp $line."$tissues".output
 	
 		done < "$input"
 
@@ -118,7 +118,7 @@ library(reshape2)
 library (ggplot2)
 
 
-p<-read.table(\"${!TMP}.gene.rpkm.header.txt.results.txt\", header=T, fill = TRUE)
+p<-read.table(\"${!TMP}.gene.rpkm.header.txt.results.txt\", header=T, fill = TRUE, check.names=FALSE, sep=\"\t\")
 pmelt<-melt(p)
 pmelt2<-na.omit(pmelt)
 pdf(\"${!TMP}.output_gtexex.pdf\", width = 7+length(p)/2)
@@ -137,3 +137,4 @@ find . -name "*script.*.r" | xargs -I % sh -c 'chmod 755 %; %;'
 #myFiles <- list.files(pattern="*.results.txt")
 #for (k in 1:length(myFiles)){
 #}
+
