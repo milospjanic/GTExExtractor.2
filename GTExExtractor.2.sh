@@ -32,7 +32,7 @@ do
 echo $line
 echo ${line//[[:blank:]]/}
 line2=$(echo ${line//[[:blank:]]/})
-grep -P "\t$line\t" GTEx_Data_V6_Annotations_SampleAttributesDS.txt | cut -f1 > "$line".sample_IDs
+grep "$line" GTEx_Data_V6_Annotations_SampleAttributesDS.txt | cut -f1 > "$line".sample_IDs
 done < "$TISSUES"
 
 ls -1 *.sample_IDs > sample_IDs_all
