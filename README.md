@@ -25,12 +25,12 @@ chmod 755 GTExExtractor.sh
 
 Check the output pdf file:
 
-![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.21.png)
+![alt text](https://github.com/milospjanic/GTExExtractor.2/blob/master/AHR.output_gtexex.2.png)
 
 If you have more genes in the input file the script will automatically widen the graph
 
-![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.18.png)
+![alt text](https://github.com/milospjanic/GTExExtractor.2/blob/master/SMAD3.output_gtexex.2.png)
 
 For example, if we run the script for one highly expressed gene like GAPDH and all low expressed TFs the output will look narrower:
 
-![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.19.png)
+![alt text](https://github.com/milospjanic/GTExExtractor.2/blob/master/TCF21.output_gtexex.2.png)
