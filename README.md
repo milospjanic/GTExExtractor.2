@@ -97,7 +97,6 @@ Prostate
 Skin - Not Sun Exposed (Suprapubic)
 Skin - Sun Exposed (Lower leg)
 Small Intestine - Terminal Ileum
-SMTSD
 Spleen
 Stomach
 Testis
