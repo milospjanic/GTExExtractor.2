@@ -15,22 +15,27 @@ AHR
 TCF21
 </pre>
 
+Content of the tissues.txt
+<pre>
+SMAD3
+AHR
+TCF21
+</pre>
+
 To run the script 
 
 <pre>
-wget https://raw.githubusercontent.com/milospjanic/GTExExtractor/master/GTExExtractor.sh
-chmod 755 GTExExtractor.sh
-./GTExExtractor.sh 'Artery - Coronary'
+wget https://raw.githubusercontent.com/milospjanic/GTExExtractor.2/master/GTExExtractor.2.sh
+chmod 755 GTExExtractor.2.sh
+./GTExExtractor.2.sh
 </pre>
 
-Check the output pdf file:
+Check the collection of output pdf files in the working folder. First one is AHR.output_gtexex.pdf:
 
 ![alt text](https://github.com/milospjanic/GTExExtractor.2/blob/master/AHR.output_gtexex.2.png)
 
-If you have more genes in the input file the script will automatically widen the graph
-
+Then for the second gene, SMAD3.output_gtexex.pdf
 ![alt text](https://github.com/milospjanic/GTExExtractor.2/blob/master/SMAD3.output_gtexex.2.png)
 
-For example, if we run the script for one highly expressed gene like GAPDH and all low expressed TFs the output will look narrower:
-
+And finally the third gene, TCF21.output_gtexex.pdf
 ![alt text](https://github.com/milospjanic/GTExExtractor.2/blob/master/TCF21.output_gtexex.2.png)
