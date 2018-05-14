@@ -44,3 +44,66 @@ Then for the second gene, SMAD3.output_gtexex.pdf
 
 And finally the third gene, TCF21.output_gtexex.pdf
 ![alt text](https://github.com/milospjanic/GTExExtractor.2/blob/master/TCF21.output_gtexex.2.png)
+
+
+To get the list of all GTEx tissues run the following command in the working folder:
+<pre>
+cut -f7 GTEx_Data_V6_Annotations_SampleAttributesDS.txt |sort |uniq
+
+Adipose - Subcutaneous
+Adipose - Visceral (Omentum)
+Adrenal Gland
+Artery - Aorta
+Artery - Coronary
+Artery - Tibial
+Bladder
+Brain - Amygdala
+Brain - Anterior cingulate cortex (BA24)
+Brain - Caudate (basal ganglia)
+Brain - Cerebellar Hemisphere
+Brain - Cerebellum
+Brain - Cortex
+Brain - Frontal Cortex (BA9)
+Brain - Hippocampus
+Brain - Hypothalamus
+Brain - Nucleus accumbens (basal ganglia)
+Brain - Putamen (basal ganglia)
+Brain - Spinal cord (cervical c-1)
+Brain - Substantia nigra
+Breast - Mammary Tissue
+Cells - EBV-transformed lymphocytes
+Cells - Leukemia cell line (CML)
+Cells - Transformed fibroblasts
+Cervix - Ectocervix
+Cervix - Endocervix
+Colon - Sigmoid
+Colon - Transverse
+Esophagus - Gastroesophageal Junction
+Esophagus - Mucosa
+Esophagus - Muscularis
+Fallopian Tube
+Heart - Atrial Appendage
+Heart - Left Ventricle
+Kidney - Cortex
+Liver
+Lung
+Minor Salivary Gland
+Muscle - Skeletal
+Nerve - Tibial
+Ovary
+Pancreas
+Pituitary
+Prostate
+Skin - Not Sun Exposed (Suprapubic)
+Skin - Sun Exposed (Lower leg)
+Small Intestine - Terminal Ileum
+SMTSD
+Spleen
+Stomach
+Testis
+Thyroid
+Uterus
+Vagina
+Whole Blood
+
+</pre>
