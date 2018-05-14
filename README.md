@@ -46,7 +46,7 @@ And finally the third gene, TCF21.output_gtexex.pdf
 ![alt text](https://github.com/milospjanic/GTExExtractor.2/blob/master/TCF21.output_gtexex.2.png)
 
 
-To get the list of all GTEx tissues run the following command in the working folder (excluding SMTSD):
+To get the list of all GTEx tissues run the following command in the working folder (excluding SMTSD and Cells - Leukemia cell line (CML)):
 <pre>
 cut -f7 GTEx_Data_V6_Annotations_SampleAttributesDS.txt |sort |uniq
 
