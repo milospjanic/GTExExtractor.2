@@ -17,9 +17,14 @@ TCF21
 
 Content of the tissues.txt
 <pre>
-SMAD3
-AHR
-TCF21
+Artery − Aorta
+Artery − Coronary
+Artery − Tibial
+Muscle − Skeletal
+Spleen
+Stomach
+Testis
+Thyroid
 </pre>
 
 To run the script 
